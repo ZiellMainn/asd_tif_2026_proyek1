@@ -12,12 +12,15 @@ public class testDoublyLinkedList {
         linkedList.addFirst(5);
         linkedList.addFirst(6);
         System.out.println(linkedList.get(2)); // menghasilkan nilai 3
-        System.out.println(linkedList.get(12)); //Terjadi exception error
+        // get(12) dinonaktifkan sementara: index di luar jangkauan memang melempar IndexOutOfBoundsException
+        // (sesuai soal), tapi program jadi berhenti sehingga method lain tidak bisa diuji dalam satu run.
+        // System.out.println(linkedList.get(12)); //Terjadi exception error
         System.out.println(linkedList.indexOf(4));// menghasilkan 5
         System.out.println(linkedList.indexOf(10));// menghasilkan -1
         linkedList.printReverse(); // Menghasilkan 6,5,4,3,2,1
         System.out.println(linkedList.remove(3)); // Menghasilkan True
         System.out.println(linkedList.remove(8)); // Menghasilkan False
-        System.out.println(linkedList.toArray()); //Menghasilkan [6,5,4,3,2,1]
+        // Pakai Arrays.toString karena println(array) hanya mencetak alamat memori, bukan isinya.
+        System.out.println(java.util.Arrays.toString(linkedList.toArray())); //Menghasilkan [6,5,4,3,2,1]
     }
 }

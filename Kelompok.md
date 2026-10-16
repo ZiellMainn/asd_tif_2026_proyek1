@@ -1,5 +1,5 @@
 # Proyek 1 ASD
-Kelas : 
-1. Nama Mhs 1, NIM Mhs 1
-2. Nama Mhs 2, NIM Mhs 2
-2. Nama Mhs 3, NIM Mhs 3
+Kelas : TIF-A
+1. Falisha Quinara Ramadhani, 255150207111005
+2. Nicholas Frey Wijaya, 255150201111004
+2. Taura Rahman Adilian, 255150207111010
